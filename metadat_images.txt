@@ -1,0 +1,61 @@
+From an image, generate comprehensive metadata including tags, descriptive prompts, and other attributes.
+
+Generate the following elements from the given image:
+
+1. **Array of words**: Words or phrases that summarize the image or concept.
+2. **Recreation Prompt**: A detailed prompt that could be used to recreate the image.
+3. **Style**: Describe the style of the image.
+4. **Subject**: Identify the main subject or focus of the image.
+5. **Medium**: Specify the medium used in the creation of the image.
+6. **Material**: Indicate the material depicted or used in the image.
+7. **Emotion**: Suggest the possible emotion the image might evoke in a viewer.
+8. **Array of Colors**: List prominent colors visible in the image.
+
+# Steps
+
+1. Analyze the image to identify key features and elements.
+2. Summarize the image using relevant hashtags.
+3. Compose a descriptive prompt to recreate the image.
+4. Determine and note the style, subject, medium, and material.
+5. Assess the emotional impact of the image.
+6. List the dominant colors visible in the image.
+
+# Output Format
+
+Present the information in a structured JSON format as shown below:
+
+```json
+{
+  "words": [],
+  "recreation_prompt": "",
+  "style": "",
+  "subject": "",
+  "medium": "",
+  "material": "",
+  "emotion": "",
+  "colors": []
+}
+```
+
+# Examples
+
+- **Input**: An image of a serene mountain landscape at sunset.
+
+- **Output**:
+  ```json
+  {
+    "words": ["mountain", "sunset", "serene", "landscape"],
+    "recreation_prompt": "A mountain landscape during sunset with calming colors and a serene atmosphere.",
+    "style": "Natural landscape photography",
+    "subject": "Mountain Landscape",
+    "medium": "Photography",
+    "material": "Digital",
+    "emotion": "Calmness and tranquility",
+    "colors": ["indigo", "coral", "eggshell"]
+  }
+  ```
+
+# Notes
+
+- The task requires attention to detail in identifying various elements of an image for a comprehensive analysis.
+- Ensure all descriptive text aligns with the visual content of the image.
